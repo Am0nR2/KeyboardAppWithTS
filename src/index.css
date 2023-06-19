@@ -1,0 +1,103 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Layout */
+
+body{
+  margin: 0;
+  background: black;
+
+}
+header{
+  padding: 0.5em;
+  color: green ;
+  text-shadow: 1px 1px 2px white;
+  margin: 0 auto;
+  text-align: center;
+  width: 650px;
+}
+
+input[type="text"] {
+  /* background-color: rgb(213, 213, 213); */
+  background-color: #00B800;
+  color: black;
+  width: 500px;
+  height: 50px;
+  padding: 0.5em;
+  text-indent: 1em;
+  font-size: 1em;
+  border: none;
+  resize: none;
+  border-radius: 6px;
+  margin-top: 1.5em;
+  box-shadow: 0px 0px 10px white;
+  line-height: 1.5;
+}
+input[type="text"]:disabled {
+  background-color: #a5a2a2;
+}
+input[type="radio"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+label{
+  text-shadow: none;
+  
+}
+input[type="radio"]:checked + label{
+  color: white;
+  font-weight: bold;
+}
+/* Classes */
+
+.words{
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+  margin: 0.75em;
+}
+.words-container{
+ margin: 2em auto; 
+ border: 1px solid gray;
+ border-radius: 10px;
+ padding: 1em 1.5em 1em 1em;
+ width: 650px;
+
+}
+.labels{
+  display: flex;
+  gap: 0.25em;
+}
+.false{
+  color: red;
+}
+.input-time{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.time-left{
+    position: absolute;
+    top: 30px;
+    right: 65px;
+    color: red;
+    border: 3px solid red;
+    border-radius: 50%;
+    padding: 0.50em 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
+}
+.counts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 1.5em 0 0;
+}
