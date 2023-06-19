@@ -41,7 +41,7 @@ export function KeyboardContextProvider({children}:
     const [trueWords, setTrueWords] = useState <string[]> ([])
     const [falseWords, setFalseWords] = useState <string[]> ([])
     const [userInput, setUserInput] = useState <string> ("")
-    const [gameTime, setGameTime] = useState <number> (10)
+    const [gameTime, setGameTime] = useState <number> (60)
     const [gameStarted, setGameStarted] = useState <boolean> (false)
     const inputRef : React.RefObject<HTMLInputElement> | null = useRef(null)
     // Functions //  
@@ -100,7 +100,7 @@ export function KeyboardContextProvider({children}:
         setWords(data.slice(30))
         setWordsToRender([data.slice(0,5), data.slice(5,10), data.slice(10,15)])
         setUserInputs([])
-        setGameTime(10)
+        setGameTime(60)
         setGameStarted(false)
         setUserInput("Test end")
         setTimeout(()=> {
